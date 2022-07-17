@@ -1,7 +1,7 @@
 package ru.job4j.calculator;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.testng.Assert;
 
 public class FitTest {
 
@@ -14,7 +14,7 @@ public class FitTest {
     }
 
     @Test
-    public void whenWoman170Weight69() {
+    public void womanWeight() {
         short inW = 170;
         double expectedW = 69;
         double out = Fit.womanWeight(inW);
