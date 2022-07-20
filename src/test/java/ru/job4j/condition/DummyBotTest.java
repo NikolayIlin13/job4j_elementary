@@ -3,8 +3,6 @@ package ru.job4j.condition;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
 
-import static org.assertj.core.api.Assertions.*;
-
 public class DummyBotTest {
 
     @Test
