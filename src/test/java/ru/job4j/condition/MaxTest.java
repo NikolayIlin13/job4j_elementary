@@ -1,7 +1,7 @@
 package ru.job4j.condition;
 
 import org.junit.jupiter.api.Test;
-import org.testng.Assert;
+import static org.assertj.core.api.Assertions.*;
 
 class MaxTest {
 
@@ -11,7 +11,7 @@ class MaxTest {
         int right = 2;
         int result = Max.maxOne(left, right);
         int expected = 8;
-        Assert.assertEquals(result, expected);
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -20,7 +20,7 @@ class MaxTest {
         int right = 8;
         int result = Max.maxTwo(left, right);
         int expected = 8;
-        Assert.assertEquals(result, expected);
+        assertThat(result).isEqualTo(expected);
     }
 
     @Test
@@ -29,6 +29,6 @@ class MaxTest {
         int right = 3;
         int result = Max.maxAll(left, right);
         int expected = 3;
-        Assert.assertEquals(expected, result);
+        assertThat(result).isEqualTo(expected);
     }
 }
