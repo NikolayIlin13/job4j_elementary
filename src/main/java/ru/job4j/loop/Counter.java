@@ -16,7 +16,7 @@ public class Counter {
                 sum = sum + i;
             }
         }
-            return sum;
+        return sum;
 }
 
     public static int sumNotEven(int start, int finish) {
